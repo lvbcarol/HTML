@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts fixo vs fluido</title>
+    <style>
+        body {
+            margin: 0;
+            /* font-size: 32px */
+        }
+        .curso {
+            /* display: inline-block; */
+            border: 2px red solid;
+            padding:10px;
+            /* width: 20%; */
+            height:100px;
+        }
+        main {
+            border: 2px blue solid;
+            width: 90%;
+            margin: 0 auto; 
+            text-align: center;
+        }
+        p {
+            display: none;
+        }
+        @media(min-width: 900px) {
+            .curso{
+                display: inline-block;
+                width: 20%;
+            }
+            p {
+                display: block;
+            }
+        }
+        @media (min-width:750px){
+            .principl {
+                background-color: rgb(232, 190, 135);
+            }
+            .curso {
+                background-color: rgb(93, 150, 200);
+            }
+        }
+        /* esse media vai agir enquanto a tela está se ajustando, modificando algumas coisas */
+    </style>
+</head>
+<body>
+    <main class="principal">
+        <article class="curso">Ciência da computação</article>
+        <article class="curso">Sistemas de informação</article>
+        <article class="curso">Inteligência artificial</article>
+        <p> SURPRESAAAAA </p>
+    </main>
+</body>
+</html>
+<!-- números deixam medidas fixas, enquanto percentuais se ajustam -->

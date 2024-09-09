@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>A propriedade display</title>
+    <style>
+        p {
+            background-color: #CCC;
+            border: 2px black dashed; 
+            border-radius: 10px;
+        }
+
+        a {
+            background-color: rgb(202, 184, 231);
+            border-width: thin;
+            border-color: aquamarine;
+            border-style: solid;
+        }
+
+        footer {
+            background-color: beige;
+
+        }
+
+        button {
+            background-color: greenyellow;
+        }
+        .professores {
+            display: block;
+            width: 150px;
+            height: 150px;
+            text-align:center;
+        }
+        .engenharia, .farmacia {
+            display:inline-block;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            border-bottom: 3px red solid;
+            border-radius: 20px;
+        }
+
+        .nova {
+            border-radius: 50px;
+            padding: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <article id="cursos">
+        <p class="engenharia">Engenharia</p>
+        <p class="farmacia">Farmácia</p>
+        <a class="professores" href="#">Veja a lista de professores aqui</a>
+        <a class="Contato" href="#">Entre em contato</a>
+        <footer class="rodape">Portal de cursos</footer>
+        <button class="botao">Clique aqui para falar conosco</button>
+        <p class="nova">Todos os direitos reservados</p>
+    </article>
+</body>
+
+</html>
+- Abra o arquivo no seu navegador e veja como se dá a exibição dos elementos. Note que alguns
+elementos aparecem um abaixo do outro enquanto outros estão lado a lado. A propriedade que
+determina essa característica é a propriedade display.
+- Por enquanto, estamos lidando com dois valores associado à propriedade display: block e
+inline.
+block: Quebras de linha são colocadas antes e depois do elemento.
+inline: Sem quebras de linha, o próximo elemento será exibido na mesma linha se couber. Ocupa
+somente o espaço necessário para o conteúdo.

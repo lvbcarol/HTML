@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ViewPoint</title>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <!-- isso impede de dar zoomout, ele vai usar o tamanho da tela -->
+    <style>
+        body {
+            margin: 0;
+        }
+        h1 {
+            margin:0;
+        }
+        .principal{
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <main class="principal">
+        <h1>Estudo sobre o Viewport</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Maiores totam enim ipsum, consequuntur veniam sequi,
+             error rem exercitationem iusto aut fugit non eum voluptatem. 
+             Sunt ipsum itaque ipsam cumque provident?</p>
+    </main>
+    <script>
+        document.write("p" + window.innerWidth + "x" + window.innerHeight + "</p>")
+        // vai deixar responsivo, já que ele vai olhar a janela em que está inserido, e se adaptar 
+    </script>
+</body>
+</html>
